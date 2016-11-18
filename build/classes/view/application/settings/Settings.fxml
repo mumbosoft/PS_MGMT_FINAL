@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxHeight="534.0" maxWidth="900.0" minHeight="534.0" minWidth="900.0" prefHeight="534.0" prefWidth="900.0" stylesheets="@/style/Home.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.application.settings.SettingsController">
+   <children>
+      <BorderPane layoutX="262.0" layoutY="138.0" prefHeight="540.0" prefWidth="723.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <AnchorPane prefHeight="167.0" prefWidth="861.0" style="-fx-border-color: #ff4e3c; -fx-border-style: solid; -fx-border-width: 0px 0px 5px;" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="392.0" prefWidth="648.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="55.0" prefWidth="641.0" text="Inställningar">
+                           <font>
+                              <Font name="System Bold" size="27.0" />
+                           </font>
+                        </Label>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Anslut till databasen" textAlignment="CENTER" wrappingWidth="647.7294921875" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="357.0" prefWidth="683.0" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets bottom="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="198.0" prefWidth="861.0" spacing="10.0">
+                     <children>
+                        <Label text="IP-address:" />
+                        <TextField fx:id="tfIpAddress" onAction="#tfIpAddressAction" promptText="0.0.0.0" />
+                        <HBox alignment="TOP_RIGHT" prefHeight="57.0" prefWidth="861.0" spacing="10.0">
+                           <children>
+                              <Button fx:id="btnTestaAnslutning" mnemonicParsing="false" onAction="#btnTestaAnslutningAction" prefHeight="32.0" prefWidth="127.0" text="Testa anslutning" />
+                              <Button fx:id="btnAnslut" mnemonicParsing="false" onAction="#btnAnslutAction" prefHeight="31.0" prefWidth="125.0" text="Anslut" />
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </HBox>
+                     </children>
+                     <padding>
+                        <Insets left="150.0" right="150.0" />
+                     </padding>
+                  </VBox>
+               </children></AnchorPane>
+         </center>
+         <padding>
+            <Insets left="20.0" right="20.0" />
+         </padding>
+         <bottom>
+            <AnchorPane prefHeight="149.0" prefWidth="860.0" style="-fx-border-color: ff4e3c; -fx-border-width: 5px 0px 0px 0px; -fx-bo: ;" BorderPane.alignment="CENTER" />
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

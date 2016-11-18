@@ -1,0 +1,18 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Sep 29, 2016, 11:50:37 PM
+    Author     : albhja15
+*/
+
+#MainAnchorPane {
+    -fx-background-color: transparent;
+}
+
+#TabPane {
+    -fx-background-color: transparent;
+}
+
